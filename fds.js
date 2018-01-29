@@ -6,6 +6,8 @@ factorial = number => {
   return (factorialNumber);
 }
 
+
+
 factorialDigitSum = number => {
   let factoriaNumber = factorial(number).toString();
   let fdsNumber = 0;
@@ -14,6 +16,11 @@ factorialDigitSum = number => {
     fdsNumber += parseInt(factoriaNumber[i]);
   }
   return (fdsNumber);
+}
+
+module.exports = {
+  factorial: factorial,
+  factorialDigitSum: factorialDigitSum
 }
 
 // input = 10, expected output = 3628800
