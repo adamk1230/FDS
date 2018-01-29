@@ -1,0 +1,2 @@
+# FDS
+Factorial Digit Sum
