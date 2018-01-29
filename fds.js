@@ -19,3 +19,8 @@
 //   Calculate the sum of the output digits so that 3 + 6 + 2 + 8 + 8 + 0 + 0 = 
 //   27
 
+factorial = number => {
+  return (number);
+}
+
+console.log(factorial(7))
