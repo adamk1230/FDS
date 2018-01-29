@@ -20,7 +20,11 @@
 //   27
 
 factorial = number => {
-  return (number);
+  let factorialNumber = 1;
+  for (let i =1, j = number + 1; i < j; i+=1){
+    factorialNumber *= i;
+  }
+  return (factorialNumber);
 }
 
-console.log(factorial(7))
+console.log(factorial(10))
