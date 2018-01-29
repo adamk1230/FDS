@@ -11,6 +11,19 @@ Simple function that takes in a number, calculates the factorial of that number,
 * Javascript
 * Node
 
+## Unit Testing
+
+* Mocha
+
+```bash
+
+npm install
+# to run the code
+node fds.js
+# to run the test
+mocha
+```
+
 ## Built With
 
 * Visual Studio Code
