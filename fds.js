@@ -27,4 +27,15 @@ factorial = number => {
   return (factorialNumber);
 }
 
-console.log(factorial(10))
+factorialDigitSum = number => {
+  let factoriaNumber = factorial(number).toString();
+  let fdsNumber = 0;
+
+  for (let i = 0, j = factoriaNumber.length; i < j; i+=1) {
+    fdsNumber += parseInt(factoriaNumber[i]);
+  }
+  return (fdsNumber);
+}
+
+console.log(factorial(10));
+console.log(factorialDigitSum(10));
