@@ -17,15 +17,26 @@ factorial = number => {
   return fractorialArray[number] = factorial(number -1) * number;
 }
 
+// Original digit sum function using string methods
+// factorialDigitSum = number => {
+//   let factoriaNumber = factorial(number).toString();
+//   let fdsNumber = 0;
 
+//   for (let i = 0, j = factoriaNumber.length; i < j; i+=1) {
+//     fdsNumber += parseInt(factoriaNumber[i]);
+//   }
+//   return (fdsNumber);
+// }
+
+// Digit sum function using math methods
 factorialDigitSum = number => {
-  let factoriaNumber = factorial(number).toString();
-  let fdsNumber = 0;
-
-  for (let i = 0, j = factoriaNumber.length; i < j; i+=1) {
-    fdsNumber += parseInt(factoriaNumber[i]);
+  let sum = 0;
+  let factorialNumber = factorial(number);
+  while (factorialNumber) {
+    sum += factorialNumber % 10;
+    factorialNumber = Math.floor(factorialNumber / 10);
   }
-  return (fdsNumber);
+  return sum;
 }
 
 module.exports = {
@@ -45,5 +56,5 @@ console.log(factorialDigitSum(4));
 
 // input = 100, expected = 9.33262154439441e+157
 console.log(factorial(100));
-// input = 100, expected = ??
+// input = 100, expected = 659?
 console.log(factorialDigitSum(100));
