@@ -32,3 +32,8 @@ console.log(factorialDigitSum(10));
 console.log(factorial(4));
 // input = 4, expected output = 6
 console.log(factorialDigitSum(4));
+
+// input = 100, expected = ??
+console.log(factorialDigitSum(100));
+// input = 100, expected = ??
+console.log(factorialDigitSum(100));
